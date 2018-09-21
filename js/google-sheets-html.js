@@ -16,7 +16,7 @@ var visualization;
 
 function drawVisualization() {
     var query = new google.visualization.Query('https://spreadsheets.google.com/tq?key=1KlCSbSycOfoHnIgEmzUyd2PA9zb4GlYhhhrFSr8DYxQ&output=html&usp=sharing');
-    query.setQuery('SELECT A, B, C, D, E, F, G, H, I, J, K, label A "Título", B "Movimiento", C "Nivel Mov.", D "Posición", E "Espacio", F "Controlador", G "Duración", H "Rejugable", I "Duración Total", J "Precio Recomendado", K "Idioma"');
+    query.setQuery('SELECT A, B, C, D, E, label A "Título", B "Movimiento", C "Nivel Mov.", D "Posición", E "Espacio"');
     query.send(handleQueryResponse);
 }
 
